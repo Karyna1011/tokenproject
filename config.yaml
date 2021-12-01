@@ -1,0 +1,26 @@
+log:
+  level: debug
+  disable_sentry: true
+
+db:
+  url: postgres://karyna:karyna@localhost:5432/karyna?sslmode=disable
+
+transfer:
+  block:  0
+  time: 1m
+
+contract:
+  address: 0x0000000022D53366457F9d5E68Ec105046FC4383
+  addressv: 0x50c1a2eA0a861A967D9d0FFE2AE4012c2E053804
+
+listener:
+  addr: :8090 # TODO configure and rm this TODO
+
+rpc:
+  endpoint: "https://mainnet.infura.io/v3/5ce3561af1b14308bc33920b295f13c8"
+#  endpoint: "https://api.etherscan.io/api"
+cop:
+  disabled: true
+  endpoint: "https://localhost"
+  service_name: project02
+  service_port: 8090
